@@ -7,6 +7,10 @@ const mode =
 module.exports = {
   mode,
 
+  output: {
+    assetModuleFilename: "images/[hash][ext][query]",
+  },
+
   module: {
     rules: [
       {
@@ -29,6 +33,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        type: "asset",
       },
     ],
   },
