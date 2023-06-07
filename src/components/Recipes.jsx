@@ -11,9 +11,6 @@ const eleventGountletsRecipe = {
   refinedMoonstone: 4,
 };
 
-console.log(eleventShieldRecipe);
-console.log(eleventGountletsRecipe);
-
 const Recepes = () => {
   const [recipe, setRecipe] = React.useState({});
   return (
