@@ -1,5 +1,4 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const mode =
@@ -56,9 +55,7 @@ module.exports = {
   devtool: "source-map",
 
   devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
+    static: "./dist",
     compress: true,
     port: 9000,
     hot: true,
