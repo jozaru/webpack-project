@@ -53,11 +53,4 @@ module.exports = {
   },
 
   devtool: "source-map",
-
-  devServer: {
-    static: "./dist",
-    compress: true,
-    port: 9000,
-    hot: true,
-  },
 };
